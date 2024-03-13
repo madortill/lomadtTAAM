@@ -1,97 +1,111 @@
 var winFeature =
     'location=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes';
 let objMedInfo = {
+
     // הכנה לתעסוקה מבצעית
     "trainingType": {
         name: 'סוגי אימונים',
-        type: "withoutMechanism",
-        pic: 'antiallergic/Desloratadine'
+        type: "text-type-training",
     },
     "reportingProcedures": {
         name: 'נהלי דיווח בעת אירוע',
-        type: "withoutMechanism",
+        type: "imgTemp",
     },
+
     // הכניסה  לגזרה 
     "dailyAlertnessCheck": {
         name: 'בדיקת כוננות יומיות',
-        type: "withoutMechanism",
+        type: "standbyTestDaily",
     },
     "weeklyReadinessCheck": {
         name: 'בדיקת כוננות שבועיות',
-        type: "withoutMechanism",
+        type: "standbyTestWeekly",
     },
+
     // לקחיים מקצועיים
+
     "protectiveGlasses": {
         name: 'משקפי מגן',
-        type: "withoutMechanism",
+        type: "textAndImgGlasses",
     },
     "ceramicShielding": {
         name: 'מיגון קרמי/שכפ"צ',
-        type: "withoutMechanism",
+        type: "textAndImgShielding",
     },
     "personalHelmet": {
         name: 'קסדה אישית וקסדת הפס"ד ',
-        type: "withoutMechanism",
+        type: "textAndImgHelmet",
     },
+
+
     "mahaz": {
         name: 'מח"צ ',
-        type: "withoutMechanism",
+        type: "videoAndImgMahz",
     },
     "medic": {
         name: 'חובש',
-        type: "withoutMechanism",
+        type: "videoMedic",
     },
     "matab": {
         name: 'מט"ב',
-        type: "withoutMechanism",
+        type: "videoMatab",
     },
     "conversions": {
         name: 'המרות',
-        type: "withoutMechanism",
+        type: "videoAndImgConversions",
     },
     "confessionHighlights": {
         name: 'דגשים לווידוא כשירות',
-        type: "withoutMechanism",
+        type: "textHighlights",
     },
+
+
+
     "volumedDevice": {
         name: 'נפח במכשיר',
-        type: "withoutMechanism",
+        type: "videoVolumedDevice",
     },
     "plasmaPreparation": {
         name: 'הכנת פלסמה',
-        type: "withoutMechanism",
+        type: "videoPlasmaPreparation",
     },
+
+
     "airway": {
         name: 'נתיב אוויר דפינטיבי',
-        type: "withoutMechanism",
+        type: "textAirway",
     },
     "chestDrainage": {
         name: 'ניקוז חזה',
-        type: "withoutMechanism",
+        type: "textChestDrainage",
     },
     "lossSign": {
         name: 'אובדן סימני חיים',
-        type: "withoutMechanism",
+        type: "textLossSign",
     },
+
+
     "painTreatment": {
         name: 'פרוטוקול הטיפול בכאב',
-        type: "withoutMechanism",
+        type: "textAndVideoPainTreatment",
     },
+
+
     "evacuationTool": {
         name: 'כלי פינוי',
-        type: "withoutMechanism",
+        type: "textAndImgEvacuationTool",
     },
     "helicopterConnection": {
         name: 'חבירה למסוק',
-        type: "withoutMechanism",
+        type: "textAndImgHelicopterConnection",
     },
     "protectivePractice": {
         name: 'תרגול מגן ללוחם',
-        type: "withoutMechanism",
+        type: "protectivePracticeText",
     },
     "takeIronSwords": {
         name: 'לקחי חרבות ברזל',
-        type: "withoutMechanism",
+        type: "takeIronSwordsVideo",
     },
 };
 
@@ -118,7 +132,7 @@ Description: */
 window.addEventListener("load", () => {
     document.querySelector(".loader").classList.add("fade");
     // place listeners on search button, about button and med buttons
-    document.querySelector('.searchButton').addEventListener('click', onClickSearch);
+    // document.querySelector('.searchButton').addEventListener('click', onClickSearch);
     document.querySelector('.aboutButton').addEventListener('click', onClickAbout);
     let arrMedsButtons = document.querySelectorAll('.mainPageButton');
     for (let i = 0; i < arrMedsButtons.length; i++) {
@@ -266,16 +280,16 @@ const creatMedID = (event) => {
     let clon = template.content.cloneNode(true);
     document.querySelector('.medicineId').appendChild(clon);
     // מכניס מידע מהאובייקט לתעודת זהות
-    for (let key of Object.keys(objCurrentMed)) {
+    // for (let key of Object.keys(objCurrentMed)) {
         // Check which key and change html accordingly
-        if (key === "pic") {
-            document.querySelector(`.${key}`).setAttribute("src", `../assets/images/${objCurrentMed[key]}.png`)
-        } else if (key === "mechanismOfAction" && objCurrentMed.type === "withMechanism") {
-            document.querySelector(`.${key}`).innerHTML = `${objCurrentMed[key]}`;
-        }
+        // if (key === "pic") {
+        //     document.querySelector(`.${key}`).setAttribute("src", `../assets/images/${objCurrentMed[key]}.png`)
+        // } else if (key === "mechanismOfAction" && objCurrentMed.type === "withMechanism") {
+        //     document.querySelector(`.${key}`).innerHTML = `${objCurrentMed[key]}`;
+        // }
         //  else if (key !== "type" && key !== "medType") {
         //     document.querySelector(`.${key}`).innerHTML = `${objCurrentMed[key]}`; }
-    }
+    // }
     // שם מאזין לחץ חזור לפי הדף שהיה קודם
     if (strcurrentPage === "medShelf") {
         document.querySelector('.topButton').addEventListener("click", creatMedShelfs);
