@@ -443,7 +443,7 @@ html, body {
 }
 
 .impText {
-    padding: 2%;
+    padding: 3%;
     background-color: #7a0101;
     color: white;
     font-weight: 600;
@@ -452,4 +452,23 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttonText {
+    background-color: rgb(181, 181, 181);
+    font-weight: 500;
+}
+
+.btnDown {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    position: relative;
+    right: 5vw;
+}
+
+.div-text {
+    text-align: center;
 }
