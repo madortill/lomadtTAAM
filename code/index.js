@@ -773,10 +773,10 @@ let objMedInfo = {
 };
 
 let objMedsShelfsColors = {//צבע, מספר מדפים, כותרת
-    antiallergic : ["pink", 3, "הכנה לתעסוקה מבצעית"], 
-    antibiotics : ["darkGreen", 4, "כניסה לגיזרה"], 
-    breathing : ["orange", 3, "תפיסת כוננות"],
-    chronicDiseases : ["teal", 4, " לקחיים מקצועיים"],
+    antiallergic : ["pink", 6, "הכנה לתעסוקה מבצעית"], 
+    antibiotics : ["darkGreen", 3, "כניסה לגיזרה"], 
+    breathing : ["orange", 10, " לקחיים מקצועיים"],
+    chronicDiseases : ["teal", 5, " לסיכום "],
     // digestion : ["yellow", 5, "עיכול"],
     // painkillers : ["purple", 4, "משככי כאבים"],
     // otherMeds : ["lightGreen", 1, "תרופות אחרות"],
@@ -965,13 +965,13 @@ const creatMedID = (event) => {
     if (  bSearchScreen === true) {
         // משנה צבע
         if (strCurrentMedType !== undefined) {
-            document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
+            // document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
             // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
         }
         // שומר סוג תרופה
         strMedTypeFromSearch = objCurrentMed.medType;
         // משנה צבע של הגל והכפתור
-        document.querySelector(`.wave`).classList.add(objMedsShelfsColors[strMedTypeFromSearch][0]);
+        // document.querySelector(`.wave`).classList.add(objMedsShelfsColors[strMedTypeFromSearch][0]);
         // document.querySelector(`.topButton`).classList.add(objMedsShelfsColors[strMedTypeFromSearch][0]);
     }
 }
@@ -1027,9 +1027,9 @@ const creatMedShelfs = (event) => {
     // שומר את העמוד הנוכחי
     strcurrentPage = "medShelf"
     // משנה צבע לפי הסוג
-    document.querySelector(`.wave`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
+    // document.querySelector(`.wave`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     // document.querySelector(`.topButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
-    document.querySelector(`.searchBoxHolder`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
+    // document.querySelector(`.searchBoxHolder`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     document.querySelector(`.shelfsButtons .homeButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     // document.querySelector(`.practiceButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     // משנה כותרת
@@ -1042,7 +1042,7 @@ const creatMedShelfs = (event) => {
     document.querySelector(`.homeButton`).addEventListener("click", sendToHomePage);
     // שומר שאלות ושולח לתרגול
     QUESTIONS = shuffle(DATA[strCurrentMedType]["questionsPractice"]);
-    document.querySelector(`.practiceButton`).addEventListener("click", onClickPractice);
+    // document.querySelector(`.practiceButton`).addEventListener("click", onClickPractice);
     // משנה צבע מדפים ושם מאזין לפתיחה שלהם
     for (let i = 1; i <= objMedsShelfsColors[strCurrentMedType][1]; i++) {
         document.querySelector(`.${strCurrentMedType}Shelf > .shelf${i}`).addEventListener("click", controlShelfsDropDown)
@@ -1097,7 +1097,7 @@ const sendToHomePage = () => {
         // משנה חזרה צבעים לכחול
         document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
         // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
-        document.querySelector(`.searchBoxHolder`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
+        // document.querySelector(`.searchBoxHolder`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
         document.querySelector(`.shelfsButtons .homeButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
         // document.querySelector(`.practiceButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
     } else if (strcurrentPage === "examPrePage") {

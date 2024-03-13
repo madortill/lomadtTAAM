@@ -334,9 +334,10 @@ html, body {
 
 /* מדפים של תרופות */
 .downButton {
-    width: 10vw;
+    width: 8vw;
     position: absolute;
     left: 2vw;
+    top: 1vh;
 }
 
 .shelfs {
@@ -355,7 +356,7 @@ html, body {
     position: relative;
     top: 2vh;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1rem;
     padding-right: 1em;
 }
 
@@ -371,9 +372,9 @@ html, body {
 }
 
 .shelfMedPicContainer {
-    /* width: 44vw; */
+    width: 44vw;
     background-color: white;
-    height: 12vh;
+    height: fit-content;
     border-radius: 1em;
     display: flex;
     align-items: center;
@@ -381,7 +382,7 @@ html, body {
     margin-bottom: 1em;
     direction: rtl;
     justify-content: center;
-    padding: 0% 20%;
+    padding: 6% 20%;
 }
 
 .shelfPicSection {
@@ -427,4 +428,28 @@ html, body {
     width: 10vw;
     position: absolute;
     right: -15vw;
+    bottom: 0vh;
+}
+
+.introductionText {
+    padding: 1% 10%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.introdText {
+    text-align: center;
+}
+
+.impText {
+    padding: 2%;
+    background-color: #7a0101;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
