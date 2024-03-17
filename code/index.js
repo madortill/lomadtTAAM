@@ -70,7 +70,10 @@ let objMedInfo = {
         type: "videoPlasmaPreparation",
     },
 
-
+    "indexVolum": {
+        name: 'החזר נפח',
+        type: "protocolHref",
+    },
     "airway": {
         name: 'נתיב אוויר דפינטיבי',
         type: "textAirway",
@@ -83,14 +86,18 @@ let objMedInfo = {
         name: 'אובדן סימני חיים',
         type: "textLossSign",
     },
-
-
     "painTreatment": {
         name: 'פרוטוקול הטיפול בכאב',
         type: "textAndVideoPainTreatment",
     },
-
-
+    "users": {
+        name: 'שימוש ב101 דיגיטלי',
+        type: 'usersVideo'
+    },
+    "podcast": {
+        name: 'פודקאסט פיקוד וניהול באירוע רפואי',
+        type: 'podcastVideo',
+    },
     "evacuationTool": {
         name: 'כלי פינוי',
         type: "textAndImgEvacuationTool",
@@ -399,7 +406,7 @@ const controlShelfsDropDown = (event) => {
         document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf} .downButton`).setAttribute("src", "../assets/images/grapics/med-shelfs/down-button.svg");
         document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf}dropDown`).classList.add("hidden");
     } else { // פותח מדף
-        let arrMedIdButtons = document.querySelectorAll(`.${strCurrentMedType}Shelf >  .${strChosenShelf}dropDown .shelfMedPicContainer`);
+        let arrMedIdButtons = document.querySelectorAll(`.${strCurrentMedType}Shelf >  .${strChosenShelf}dropDown .shelfMedPicContainer `);
         for (let i = 0; i < arrMedIdButtons.length; i++) {
             if (arrMedIdButtons[i].classList.contains(('buttonText'))) {
                 arrMedIdButtons[i].addEventListener('click', creatMedID);

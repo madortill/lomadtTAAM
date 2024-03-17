@@ -455,7 +455,15 @@ html, body {
 }
 
 .buttonText {
-    background-color: rgb(181, 181, 181);
+    display: inline-block;
+    padding: 9px 32px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    background-color: #aaabaa75;
+    border-radius: 5px;
+    border: 2px solid #aaabaa00;
     font-weight: 500;
 }
 
@@ -466,9 +474,47 @@ html, body {
     align-items: center;
     padding-top: 1em;
     position: relative;
-    right: 5vw;
+    right: 14vw;
 }
 
 .div-text {
     text-align: center;
 }
+
+.mahaz-div {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom:solid 1.5px #000000;
+}
+
+/* .shelfButton { */
+    /* font-weight: 500; */
+    /* box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5), 0px 0px 1px rgb(0 0 0 / 50%); */
+    /* color: aliceblue;
+    font-size: 1.1rem;
+    border-radius: 1vw;
+    width: 50%; */
+/*   
+} */
+
+.div-conclustion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15% 10% 5%;
+    font-size: 1.3rem;
+}
+
+.big-list {
+    /* list-style-type: none; Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+/* .big-list li { */
+    /* font-size: 20px; Adjust the font size as needed */
+    /* margin-bottom: 10px; Add space between list items */
+    /* margin: */
+/* } */
+
