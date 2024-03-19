@@ -242,6 +242,9 @@ html, body {
     margin: auto;
     font-weight: 800;
     font-size: 2em;
+    position: relative;
+    top: -1vh;
+    left: 5vw;
 }
 
 .logos {
@@ -280,13 +283,6 @@ html, body {
     padding-top: 1em;
     position: relative;
     left: 4vw;
-}
-
-.aboutHeadline {
-    height: 32vw;
-    position: relative;
-    top: -1vh;
-    left: 5vw;
 }
 
 .picLeft{
