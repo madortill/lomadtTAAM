@@ -139,8 +139,11 @@ Description: */
 window.addEventListener("load", () => {
     document.querySelector(".loader").classList.add("fade");
     // place listeners on search button, about button and med buttons
-    // document.querySelector('.searchButton').addEventListener('click', onClickSearch);
+    document.querySelector('.searchButton').addEventListener('click', onClickSearch);
     document.querySelector('.aboutButton').addEventListener('click', onClickAbout);
+    // if(document.querySelector('.searchButton').classList.contains("aboutPageBtn")) {
+    //     document.querySelector('.searchButton').addEventListener('click', onClickSearch);
+    // }
     let arrMedsButtons = document.querySelectorAll('.mainPageButton');
     for (let i = 0; i < arrMedsButtons.length; i++) {
         arrMedsButtons[i].addEventListener('click', creatMedShelfs);
@@ -157,6 +160,7 @@ const onClickAbout = () => {
     document.querySelector('.aboutButton').classList.add("hidden");
     document.querySelector('.homePageButtons').classList.add("hidden");
     // משנה את התמונה של הכפתור העליון
+    document.querySelector('.topButton').classList.add("aboutPageBtn");
     document.querySelector('.topButton').setAttribute("src", "../assets/images/grapics/home-page/right-arrow.svg");
     strcurrentPage = "aboutPage"
 }
@@ -340,7 +344,7 @@ const creatMedShelfs = (event) => {
         document.querySelector('.topButton').removeEventListener("click", creatMedShelfs);
         // משנה צבע של הגל והכפתור
         if (strMedTypeFromSearch !== undefined) {
-            document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
+            // document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
             // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
         }
     } else if (strcurrentPage === "homePage") {

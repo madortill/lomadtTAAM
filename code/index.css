@@ -290,9 +290,12 @@ html, body {
 }
 
 .picLeft{
-    left: -5vw;
+    margin-left: 2vw;
 }
-
+.mainPagePic {
+   width: 30%;
+   margin-right: 2vw;
+}
 .homePageButtonsScroll {
     overflow-y: scroll;
     height: 62vh;
@@ -517,4 +520,9 @@ html, body {
     /* margin-bottom: 10px; Add space between list items */
     /* margin: */
 /* } */
+
+.searchButton[src="../assets/images/grapics/home-page/search-button.svg"] {
+   display: none;
+   pointer-events: none;
+}
 

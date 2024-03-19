@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.1435 90.14351">
 	<defs>
 		<style>
-			.a{fill:#f4f4f4;}.b{fill:#a71319;}
+			.a{fill:#f4f4f4;}.b{fill:#a71319;},
+			transform: scaleY(-1);
 		</style>
 	</defs>
 	<circle class="a" cx="45.07175" cy="45.07176" r="45.07175" />
