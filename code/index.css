@@ -331,9 +331,9 @@ table, th, td {
 }
 
 .td-tabel {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1rem;
-    padding: 0% 5%;
+    padding: 0% 2%;
 }
 .text-tab {
     background-color: #7a0101;
@@ -577,6 +577,7 @@ table, th, td {
 
 .big-list {
     font-weight: 500;
+    font-size: 1rem;
     top: 10%;
     position: relative;
 }
@@ -584,4 +585,11 @@ table, th, td {
 .searchButton[src="../assets/images/grapics/home-page/search-button.svg"] {
     display: none;
     pointer-events: none;
+}
+
+.testBtn {
+    background-color: #7a0101;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
 }

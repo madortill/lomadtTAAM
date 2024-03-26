@@ -152,6 +152,7 @@ window.addEventListener("load", () => {
     document.querySelector(".loader").classList.add("fade");
     // place listeners on search button, about button and med buttons
     document.querySelector('.btnNext').addEventListener('click', () => {
+        console.log('click');
         document.getElementsByClassName('open-screen')[0].style.display = 'none';
     });
     
