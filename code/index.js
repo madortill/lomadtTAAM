@@ -165,7 +165,7 @@ window.addEventListener("load", () => {
     for (let i = 0; i < arrMedsButtons.length; i++) {
         arrMedsButtons[i].addEventListener('click', creatMedShelfs);
     };
-    document.querySelector(`.testButton`).addEventListener("click", onClickExam);
+    // document.querySelector(`.testButton`).addEventListener("click", onClickExam);
 });
 
 /* onClickAbout

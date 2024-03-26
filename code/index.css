@@ -331,7 +331,7 @@ table, th, td {
 }
 
 .td-tabel {
-    /* text-align: center; */
+    text-align: center;
     font-size: 1rem;
     padding: 0% 0%;
     width: 40%;
@@ -537,6 +537,7 @@ table, th, td {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);;
 }
 
 .btnDown {
