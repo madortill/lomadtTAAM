@@ -16,8 +16,10 @@
     font-weight: 800;
 }
 
-html, body {
+html,
+body {
     -webkit-user-select: none;
+    user-select: none;
     font-family: "segoeu";
     font-weight: 100;
     width: 100%;
@@ -48,7 +50,39 @@ html, body {
     font-weight: 800;
 }
 
-.loader > img {
+.open-screen {
+    position: absolute;
+    /* top:15%; */
+    z-index: 2;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #7a0101;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    /* display: none; */
+}
+
+.btnNext {
+    bottom: 23%;
+    position: absolute;
+    width: 22%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: rgb(62, 61, 61);
+    border: none;
+    background-color: rgb(230, 229, 229);
+    height: 5%;
+}
+
+.text-screen {
+    padding: 0% 10%;
+}
+.loader>img {
     width: 50vw;
 }
 
@@ -113,6 +147,7 @@ html, body {
 .red {
     filter: hue-rotate(301deg) brightness(29%) saturate(5);
 }
+
 .sub-titles {
     font-weight: bold;
     padding-top: 1em;
@@ -143,7 +178,7 @@ html, body {
     /* font-size: 2rem; */
     position: absolute;
     top: 50%;
-    padding: 2% 20% ;
+    padding: 2% 20%;
     transform: translateY(-50%);
     right: 1vw;
 }
@@ -184,12 +219,12 @@ html, body {
     outline: none;
 }
 
-.searchBox:focus{
+.searchBox:focus {
     outline: none;
     top: 11vh;
 }
 
-.dropDown{
+.dropDown {
     pointer-events: none;
     width: 73vw;
     height: 63vh;
@@ -255,7 +290,7 @@ html, body {
     top: 55vh;
 }
 
-.logos > img {
+.logos>img {
     width: 21vw;
 }
 
@@ -273,6 +308,16 @@ html, body {
     display: flex;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.name-table {
+    text-align: center;
+    padding: -4% 5%;
+    font-size: 1.2rem;
+}
 .homePageButtonsScroll::-webkit-scrollbar {
     display: none;
 }
@@ -282,16 +327,35 @@ html, body {
     padding: 2em 0.6em;
     padding-top: 1em;
     position: relative;
-    left: 4vw;
+    left: 0vw;
 }
 
-.picLeft{
+.td-tabel {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0% 5%;
+}
+.text-tab {
+    background-color: #7a0101;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+    position: relative;
+    top: 40%;
+    height: 20%;
+    transform: rotate(270deg);
+}
+
+.picLeft {
     margin-left: 2vw;
 }
+
 .mainPagePic {
-   width: 30%;
-   margin-right: 2vw;
+    width: 30%;
+    margin-right: 2vw;
 }
+
 .homePageButtonsScroll {
     overflow-y: scroll;
     height: 62vh;
@@ -299,10 +363,10 @@ html, body {
 }
 
 .testButton {
-  position: absolute;
-  bottom: 2vh;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* תעודת זהות של תרופות */
@@ -375,21 +439,22 @@ html, body {
     background-color: white;
     height: fit-content;
     border-radius: 1em;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-size: 1rem;
     margin-bottom: 1em;
     direction: rtl;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 6% 20%;
 }
 
 .shelfPicSection {
     padding-top: 1em;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .medShelf {
@@ -453,27 +518,31 @@ html, body {
     align-items: center;
 }
 
+.buttonInList {
+   position: relative;
+   right: 20%;
+}
 .buttonText {
     display: inline-block;
-    padding: 9px 32px;
-    font-size: 16px;
+    padding: 2% 3%;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
-    color: rgb(54, 54, 54);
+    color: rgb(0 0 0);
     background-color: #aaabaa75;
     border-radius: 5px;
-    border: 2px solid #aaabaa00;
+    /* border: 2px solid #aaabaa00; */
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnDown {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1em;
     position: relative;
-    right: 14vw;
+    right: 24vw;
+    align-content: center;
 }
 
 .div-text {
@@ -484,13 +553,13 @@ html, body {
     text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
-    border-bottom:solid 1.5px #000000;
+    border-bottom: solid 1.5px #000000;
 }
 
 /* .shelfButton { */
-    /* font-weight: 500; */
-    /* box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5), 0px 0px 1px rgb(0 0 0 / 50%); */
-    /* color: aliceblue;
+/* font-weight: 500; */
+/* box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5), 0px 0px 1px rgb(0 0 0 / 50%); */
+/* color: aliceblue;
     font-size: 1.1rem;
     border-radius: 1vw;
     width: 50%; */
@@ -502,23 +571,17 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15% 10% 5%;
+    padding: 0% 10% 5%;
     font-size: 1.3rem;
 }
 
 .big-list {
-    /* list-style-type: none; Remove default bullets */
-    padding: 0; /* Remove default padding */
+    font-weight: 500;
+    top: 10%;
+    position: relative;
 }
-
-/* .big-list li { */
-    /* font-size: 20px; Adjust the font size as needed */
-    /* margin-bottom: 10px; Add space between list items */
-    /* margin: */
-/* } */
 
 .searchButton[src="../assets/images/grapics/home-page/search-button.svg"] {
-   display: none;
-   pointer-events: none;
+    display: none;
+    pointer-events: none;
 }
-
