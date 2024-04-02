@@ -76,7 +76,7 @@ body {
     color: rgb(62, 61, 61);
     border: none;
     background-color: rgb(230, 229, 229);
-    height: 6%;
+    height: 8%;
 }
 
 .text-screen {
@@ -616,7 +616,7 @@ td {
     font-size: 1.2rem;
     position: absolute;
     width: 50%;
-    bottom: 4vh;
+    bottom: 1vh;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
