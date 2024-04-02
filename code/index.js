@@ -12,14 +12,14 @@ let objMedInfo = {
         type: "imgTemp",
     },
 
-    "medicalEquipment": {
-        name: 'ציוד רפואי',
-        type: 'text-medicalEquipment',
-    },
-    "ambulanceBtn": {
-        name: 'אמבולנס',
-        type: 'ambulance-btn'    
-    },
+    // "medicalEquipment": {
+    //     name: 'ציוד רפואי',
+    //     type: 'text-medicalEquipment',
+    // },
+    // "ambulanceBtn": {
+    //     name: 'אמבולנס',
+    //     type: 'ambulance-btn'    
+    // },
 
     // הכניסה  לגזרה 
     "dailyAlertnessCheck": {
@@ -66,10 +66,10 @@ let objMedInfo = {
         name: 'המרות',
         type: "videoAndImgConversions",
     },
-    "confessionHighlights": {
-        name: 'דגשים לווידוא כשירות',
-        type: "textHighlights",
-    },
+    // "confessionHighlights": {
+    //     name: 'דגשים לווידוא כשירות',
+    //     type: "textHighlights",
+    // },
 
 
 

@@ -25,10 +25,17 @@
         <img src="../assets/images/grapics/home-page/center and mask.gif" alt="Loading..." />
         מיד מתחילים...
     </div>
-    <div class = "open-screen">
+    <div class="open-screen">
+        <div class="img-screen">
+            <img class="signBahd10" src="../assets/images/grapics/signBahd10.png" alt="signBahd10">
+            <img class="signForce" src="../assets/images/grapics/signForce.png" alt="signForce">
+        </div>
         <h1>מטופל יקר,</h1>
-        <p class ="text-screen">לומדה זו, תביא בידייך את הידע והסדר בכדי להכניס אותך בצורה הטובה ביותר לתעסוקה מבצעית. הלומדה, לרבות המבחן, הינם תנאי לחפיסת הכוננות.</p>
-        <button class="btnNext">הבא</button>
+        <p class="text-screen"> לומדה זו, תביא בידיך את מירב הידע והלקחים המקצועיים על מנת שתדע להיערך לכניסה לתעסוקה
+            מבצעית באופן המיטבי ביותר, משלב הכנות ועד לסיום התעסוקה.
+        <p class="text-screen"> בסיום הלומדה תבצע\י מבחן אשר הינו תנאי מחייב לתפיסת כוננות גזרתית.</p>
+        </p>
+        <button class="btnNext">כניסה ללומדה</button>
     </div>
     <!-- opening -->
     <div class="homePage">
@@ -71,25 +78,25 @@
             <div class="homePageButtons">
                 <div class="homePageButtonsScroll">
                     <div class="mainPageButton antiallergic"><img class="mainPagePic"
-                            src="../assets/images/grapics/home-page/system-uicons--gps.svg"><span
-                            class="medHeadline">הכנה לתעסוקה מבצעית</span>
-                            <div class = "text-tab">הכנה</div>
+                            src="../assets/images/grapics/home-page/system-uicons--gps.svg"><span class="medHeadline"><b
+                                style="color: black;">הכנה</b> לתעסוקה מבצעית</span>
+                        <!-- <div class = "text-tab">הכנה</div> -->
                     </div>
-                            
                     <div class="mainPageButton antibiotics">
-                        <div class="medHeadline">כניסה לגזרה ותפיסת כוננות רפואית</div><img class="mainPagePic picLeft"
-                            src="../assets/images/grapics/home-page/tdesign--dam.svg">
+                        <div class="medHeadline"> <b style="color: black;">כניסה לגזרה</b> ותפיסת כוננות רפואית</div>
+                        <img class="mainPagePic picLeft" src="../assets/images/grapics/home-page/tdesign--dam.svg">
                     </div>
                     <div class="mainPageButton breathing"><img class="mainPagePic"
                             src="../assets/images/grapics/home-page/system-uicons--warning-triangle.svg">
-                        <div class="medHeadline">לקחיים מקצועיים</div>
+                        <div class="medHeadline">לקחים מקצועיים</div>
                     </div>
                     <div class="mainPageButton chronicDiseases">
                         <div class="medHeadline">סיכום</div><img class="mainPagePic picLeft"
                             src="../assets/images/grapics/home-page/mdi--book-outline.svg">
                     </div>
                 </div>
-                <button onclick="window.location.href='https://campus.digital.idf.il/course/view.php?id=6356'"  class="testBtn buttons">מבחן</button>
+                <button onclick="window.location.href='https://campus.digital.idf.il/course/view.php?id=6356'"
+                    class="testBtn buttons">כניסה למבחן בסיום הלומדה</button>
             </div>
             <!-- med shelfs -->
             <div class="medShelfs">
@@ -109,7 +116,7 @@
                     <div class="shelf1dropDown shelfsdropDown hidden">
                         <!-- <div class="sub-titles">מנגנון פעולה</div> -->
                         <div><span class="bold"> </span><br>
-                          היכרות עם בעלי תפקידים:
+                            היכרות עם בעלי תפקידים:
                         </div>
                         <br>
                         <div class="shelfMedPicContainer">
@@ -127,22 +134,31 @@
                     <div class="shelf2dropDown shelfsdropDown hidden">
                         <!-- <div class="sub-titles">מנגנון פעולה</div> -->
                         <div><span class="bold"> </span><br>
-                            <p class="introdText"> טרם העלייה לתע"מ וכחודש לכל הפחות. נדרש להציג את אבחון היחידה- לוודא את כשירות המסגרת ומוכונותה למשימה:</p>
+                            <p class="introdText"> טרם העלייה לתע"מ וכחודש לכל הפחות. נדרש להציג את אבחון היחידה- לוודא
+                                את כשירות המסגרת ומוכונותה למשימה:</p>
                             <span class="bold"> </span>
                         </div>
                         <div class="shelfPicSection">
                             <div class="shelfMedPicContainer ">
                                 1. כח אדם - חובשים, מטפלים בכירים, נהג אמבולנס.
                             </div>
-                            <div class="shelfMedPicContainer" >
+                            <div class="shelfMedPicContainer">
                                 2. אימונים
                             </div>
-                            <button class="shelfMedPicContainer buttonText medicalEquipment buttonInList">
+                            <div class="shelfMedPicContainer">
                                 3. ציוד רפואי
-                            </button>
-                            <button class="shelfMedPicContainer buttonText ambulanceBtn buttonInList">  
+                                <h4 style="margin: 0;">מסגרת סדירה:</h4>
+                                <p style="margin: 0;">בשירות מלא</p>
+                                <h4 style="margin: 0;">מסגרת מילואים:</h4>
+                                <p style="margin: 0;">סטטוס תיאום משיכה</p>
+                            </div>
+                            <div class="shelfMedPicContainer">
                                 4. אמבולנס
-                            </button>
+                                <!-- <h1>במסגרת סדירה</h1>
+                                <p>אמבולנס אורגני - כשירות ותקינות.</p>
+                                <h1>במסגרת מילואים</h1>
+                                <p>בעל רישיון מתאים לכלי הגזרתי.</p> -->
+                            </div>
                         </div>
                     </div>
                     <!-- מדף 3 -->
@@ -157,7 +173,7 @@
                         <div class="shelfPicSection ">
                             <div class="shelfMedPicContainer">
                                 <!-- <img class="shelfMedPic" src="../assets/images/antiallergic/sinufed.png"> -->
-                                 1.ביצוע <b>סיור גזרה מקיף</b> בנוכחות כלל בעלי
+                                1.ביצוע <b>סיור גזרה מקיף</b> בנוכחות כלל בעלי
                                 התפקידים הקריטיים (מט"בים ומנהלי
                                 אירוע)
                             </div>
@@ -174,14 +190,14 @@
                             </div>
                             <div class="shelfMedPicContainer">
                                 4. פקודות ופק"לים גיזרתיים- יש
-                                לקבל את החומרים טרם העלייה לתע"
-                                מ ולגזור משמעותית לרמת הגדוד.
+                                לקבל את החומרים טרם העלייה לתע"מ
+                                ולגזור משמעותית לרמת הגדוד.
                             </div>
                         </div>
                     </div>
                     <div class="shelfs shelf4">
                         <div class="shelfHedline">
-                             אימון לפני תעסוקה - אל"ת/אל"ל
+                            אימון לפני תעסוקה - אל"ת/אל"ל
                             <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
                         </div>
                         <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
@@ -194,7 +210,8 @@
                                 המפקדים עוד בשלבי התכנון ולהתמיע אימוני רפואה לכלל הדרגים באימון המכין לתעסוקה.
                             </div>
                             <div class="shelfMedPicContainer ">
-                                2. מומלץ לרכז מאמץ עם מספק מדריכים על מנת למצות את זמן האימון באופן המיטבי לצד ביצוע האימון האגמי.
+                                2. מומלץ לרכז מאמץ עם מספק מדריכים על מנת למצות את זמן האימון באופן המיטבי לצד ביצוע
+                                האימון האגמ"י.
                             </div>
                             <div class="shelfMedPicContainer ">
                                 3. יש להקפיד על תרגול עם ציוד ומכשור רפואי זהה לאילו אשר יעשה בהם שימוש בגזרת התע"מ.
@@ -203,7 +220,7 @@
                                 סוגי אימונים:
                                 <br>
                                 <br>
-                                <button class="shelfMedPicContainer buttonText trainingType buttonInList">לחץ</button>
+                                <div class="shelfMedPicContainer buttonText trainingType buttonInList">לחץ</div>
                             </div>
                         </div>
                     </div>
@@ -220,10 +237,10 @@
                                 1. הכרות עם אמצעי הקשר השונים
                                 העומדים לרשות צוותי הרפואה
                             </div>
-                            <button class="shelfMedPicContainer buttonText reportingProcedures buttonInList">
+                            <div class="shelfMedPicContainer buttonText reportingProcedures ">
                                 2. הכרות ותרגול נהלי הדיווח בעת
                                 אירוע
-                            </button>
+                            </div>
                             <div class="shelfMedPicContainer">
                                 3. שעל"ח חטיבתי, מעבר על פורמטים
                                 הכוללים דו"חות כשירות עיתיים
@@ -248,14 +265,14 @@
                     </div>
                     <div class="shelf6dropDown shelfsdropDown hidden">
                         <div class="shelfPicSection ">
-                            <div class="shelfMedPicContainer">1. 
+                            <div class="shelfMedPicContainer">1.
                                 נהלי בדיקת כשירות לעצור- הצגת מערכת האקילה (בגזרות הרלוונטיות).
                             </div>
-                            <div class="shelfMedPicContainer">2. 
-                                מענה ברפואת שגרה- הכרת האמצעים במרפאה, מערכת CPR + GO. 
+                            <div class="shelfMedPicContainer">2.
+                                מענה ברפואת שגרה- הכרת האמצעים במרפאה, מערכת CPR + CPR-GO.
                             </div>
-                            <div class="shelfMedPicContainer">3. 
-                            ברה"צ- תברואת מזון ובעלי חיים - דגשים לטיפול באירוע מסוג זה.                            
+                            <div class="shelfMedPicContainer">3.
+                                ברה"צ- תברואת מזון ובעלי חיים - דגשים לטיפול באירוע מסוג זה.
                             </div>
                         </div>
                     </div>
@@ -274,7 +291,7 @@
                     <div class="shelf1dropDown shelfsdropDown hidden">
                         <div class="shelfPicSection">
                             <div class="shelfMedPicContainer">
-1.                                פיזור סד"כ רפואה במוצבים –
+                                1. פיזור סד"כ רפואה במוצבים –
                                 אמצע וסוף שבוע
                             </div>
                             <div class="shelfMedPicContainer"> 2.
@@ -290,10 +307,10 @@
                             <div class="shelfMedPicContainer">5.
                                 מיקום התאג"ד, תגבור צירים, סבב
                                 מוצבים
-                            </div> 
-                            
+                            </div>
+
                             <div class="shelfMedPicContainer">6.
-                              שבצ"ק פיזור מטופלים בכירים וחובשים למול משימות ברזל באמצע ובסוף השבוע.
+                                שבצ"ק פיזור מטופלים בכירים וחובשים למול משימות ברזל באמצע ובסוף השבוע.
                             </div>
                         </div>
                     </div>
@@ -307,14 +324,14 @@
                     </div>
                     <div class="shelf2dropDown shelfsdropDown hidden">
                         <div class="shelfPicSection">
-                            <button class="shelfMedPicContainer buttonText dailyAlertnessCheck">
+                            <div class="shelfMedPicContainer buttonText dailyAlertnessCheck">
                                 בדיקת כוננות יומיות
-                            </button>
+                            </div>
                         </div>
                         <div class="shelfPicSection">
-                            <button class="shelfMedPicContainer buttonText weeklyReadinessCheck">
+                            <div class="shelfMedPicContainer buttonText weeklyReadinessCheck">
                                 בדיקת כוננות שבועיות
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <!-- מדף 3 -->
@@ -327,16 +344,17 @@
                     </div>
                     <div class="shelf3dropDown shelfsdropDown hidden">
                         <div class="shelfPicSection ">
-                            <button class="shelfMedPicContainer buttonText trainingPlanning">
-                                תכנוני אימונים במהלך התעסוקה
-                            </button>
+                            <div class="shelfMedPicContainer buttonText trainingPlanning">
+                                תכנון אימונים במהלך התעסוקה
+                            </div>
                         </div>
                     </div>
 
                 </div>
                 <!-- לקחים מקצועיים -->
                 <div class="breathingShelf medShelf hidden">
-                    <img class="medTypeSymbol" src="../assets/images/grapics/home-page/system-uicons--warning-triangle.svg">
+                    <img class="medTypeSymbol"
+                        src="../assets/images/grapics/home-page/system-uicons--warning-triangle.svg">
                     <div class="shelfs shelf1">
                         <div class="shelfHedline">
                             מניעת פציעות
@@ -350,17 +368,18 @@
                             הרפואה הטובה ביותר היא רפואה מונעת. לכך יושם דגש על מיגון עצמי ווידוא מיגון הלוחמים:
                         </div>
                         <div class="shelfPicSection">
-                            <button class="shelfMedPicContainer buttonText protectiveGlasses buttonInList">
+                            <div class="shelfMedPicContainer buttonText protectiveGlasses ">
                                 משקפי מגן
-                            </button>
-                            <button class="shelfMedPicContainer buttonText ceramicShielding buttonInList">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText ceramicShielding ">
                                 מיגון קרמי/שכפ"צ
-                            </button>
-                            <button class="shelfMedPicContainer buttonText personalHelmet buttonInList">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText personalHelmet ">
                                 קסדה אישית וקסדת הפס"ד
-                            </button>
-                           
-                            <p style="text-align: center; font-weight: 700;"> הדגשת השוני בהנחיות הגזרתיות והחשיבות בחבירה לכוחות הגזרתיים לדיוק המיגון</p>   
+                            </div>
+
+                            <p style="text-align: center; font-weight: 700;"> הדגשת השוני בהנחיות הגזרתיות והחשיבות
+                                בחבירה לכוחות הגזרתיים לדיוק המיגון</p>
                         </div>
                     </div>
                     <!-- מדף 2 -->
@@ -377,24 +396,30 @@
                             האמצעים העומדים לרשות האוכלוסיות השונות:
                         </div>
                         <div class="shelfPicSection">
-                            <button class="shelfMedPicContainer buttonText mahaz ">
+                            <div class="shelfMedPicContainer buttonText mahaz ">
                                 מח"צ
-                            </button>
-                            <button class="shelfMedPicContainer buttonText medic">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText medic">
                                 חובש
-                            </button>
-                            <button class="shelfMedPicContainer buttonText matab">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText matab">
                                 מט"ב
-                            </button>
-                            <button class="shelfMedPicContainer buttonText conversions">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText conversions">
                                 המרות
-                            </button>
+                            </div>
                         </div>
+                        <br>
                         <p style="font-weight: 900; text-align: center;">עצירת דימום הינה פעולה כואבת וחשוב לתת שיכוך
                             כאב לפצועים בהכרה ושאינם בהלם עמוק לאחר עצירת דימום</p>
-                        <button class="shelfMedPicContainer buttonText confessionHighlights btnDown">
-                           דגש!
-                        </button>
+                        <h2 style="text-align: center; color: brown;">דגש!</h2>
+                        <h3 style="text-align: center;">כשירות לטיפול של כלל הלוחמים:</h3>
+                        <ul style="text-align: center; padding: 0% 10%;">
+                            <il>1) מיקום ה-CAT וה- FC בווסט – זהה בין הלוחמים כדי לאפשר גישה מהירה בעת צורך.</il>
+                            <br>
+                            <br>
+                            <il>2) אופן אפסון (אריזה סגורה ושלמה).</il>
+                        </ul>
                     </div>
                     <!-- מדף 3 -->
                     <div class="shelfs shelf3">
@@ -408,9 +433,9 @@
                         <p class="impText">המט"ב צריך לקחת חלק פעיל בהחזרת הנפח – השגת גישה למחזור הדם, וידוא הכנת פלזמה
                             וכו', ולא רק בהחלטה על הצורך בו</p>
                         <div class="shelfPicSection ">
-                            <button class="shelfMedPicContainer buttonText indexVolum buttonInList">
+                            <div class="shelfMedPicContainer buttonText indexVolum ">
                                 אינדיקציות עדכניות להחזר נפח
-                            </button>
+                            </div>
                             <div class="shelfMedPicContainer">
                                 סדר העדיפות במתן נפח הוא:
                                 דם מלא > פלזמה מיובשת > הרטמן.
@@ -433,12 +458,12 @@
                                 גישה וסקולרית- דגש על חשיבות גישה וסקולרית מהירה ויעילה- IO כעדיפות בפצוע בהלם עמוק.
                                 מט"ב שותף פעיל בהשגת הגישה בפצוע בהלם (כמטפל המנוסה ביותר).
                             </div>
-                            <button class="shelfMedPicContainer buttonText volumedDevice buttonInList">
+                            <div class="shelfMedPicContainer buttonText volumedDevice ">
                                 יש להחזיר נפח דרך מכשיר QinFlow במידת האפשר
-                            </button>
-                            <button class="shelfMedPicContainer buttonText plasmaPreparation buttonInList">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText plasmaPreparation ">
                                 הכנת פלסמה
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <!-- מדף 4 -->
@@ -454,15 +479,15 @@
                             ופינוי מהיר. פרוצדורות אחרות הרבה פעמים אינן נחוצות, עלולות להסתבך, להחמיר את מצב הפצוע ו/או
                             לעכב פינוי</p>
                         <div class="shelfPicSection ">
-                            <button class="shelfMedPicContainer buttonText airway">
+                            <div class="shelfMedPicContainer buttonText airway">
                                 התוויות לנתיב אוויר דפיניטיבי
-                            </button>
-                            <button class="shelfMedPicContainer buttonText chestDrainage">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText chestDrainage">
                                 התוויות לניקוז חזה
-                            </button>
-                            <button class="shelfMedPicContainer buttonText lossSign">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText lossSign">
                                 פרוטוקול אובדן סימני חיים
-                            </button>
+                            </div>
                         </div>
                         <p style="font-weight: 600; color: rgb(152, 20, 20); text-align: center; align-items: center;">
                             הימנעות מקביעת מוות בשטח, יוצרת פינויים מיותרים תוך סיכון צוותים ועומס על המערכת</p>
@@ -481,9 +506,9 @@
                             בכאב ולהמשיך לעודד שימוש באנלגטיקה בפצועים המתאימים, הן ברמת החובש והן ברמת המט"ב.
                         </div>
                         <div class="shelfPicSection ">
-                            <button class="shelfMedPicContainer buttonText painTreatment ">
+                            <div class="shelfMedPicContainer buttonText painTreatment ">
                                 פרוטוקול הטיפול בכאב
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div class="shelfs shelf6">
@@ -499,12 +524,12 @@
                             <div class="shelfMedPicContainer">
                                 הכנה של הפצוע לפינוי – השלמת הפשטה, סריקה מלאה, כיסוי וחימום, קיבוע לאלונקה וחפיסה.
                             </div>
-                            <button class="shelfMedPicContainer buttonText evacuationTool buttonInList">
+                            <div class="shelfMedPicContainer buttonText evacuationTool ">
                                 כלי הפינוי הזמינים בגזרות
-                            </button>
-                            <button class="shelfMedPicContainer buttonText helicopterConnection buttonInList">
+                            </div>
+                            <div class="shelfMedPicContainer buttonText helicopterConnection ">
                                 חבירה למסוק
-                            </button>
+                            </div>
                             <div class="shelfMedPicContainer">
                                 בעת אירוע רפואי- הקפצת מסוק ולא קיצור
                             </div>
@@ -546,9 +571,9 @@
                             <div class="shelfMedPicContainer">
                                 תיעוד במערכת המנפ"צ- הנחיות והסברים לעבודה במערכת
                             </div>
-                            <button class="shelfMedPicContainer buttonText users buttonInList">
+                            <div class="shelfMedPicContainer buttonText users ">
                                 שימוש ב- 101 דיגיטלי
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div class="shelfs shelf8">
@@ -561,9 +586,9 @@
                     <div class="shelf8dropDown shelfsdropDown hidden">
                         <p class="impText">פיקוד מלפנים- אחריות קצין הרפואה</p>
                         <div class="shelfPicSection ">
-                            <button class="shelfMedPicContainer buttonText podcast buttonInList">
+                            <div class="shelfMedPicContainer buttonText podcast ">
                                 האזנה לפודקסט בנושא פיקוד וניהול הקרפ"ג באירוע רפואי
-                            </button>
+                            </div>
                             <div class="shelfMedPicContainer">
                                 נוהל קרב לפעילות מבצעית- דגשים בהכנת מרשם רפואה, נוהל קרב, תרגולות לפני פעילות
                             </div>
@@ -578,7 +603,7 @@
                                 לשליטה העברת דיווחים וניווט.
                             </div>
                             <div class="shelfMedPicContainer">
-                                 בהינתן אירוע צבאי - לקיחת אחריות על זירה צבאית מגורמים אזרחיים.
+                                בהינתן אירוע צבאי - לקיחת אחריות על זירה צבאית מגורמים אזרחיים.
                             </div>
                             <div class="shelfMedPicContainer">
                                 קבלת החלטות ודיווח לרמה ממונה
@@ -598,9 +623,9 @@
                             <div class="shelfMedPicContainer">
                                 דגשים בנוגע להכנות מנטאליות למפקדים לקראת לחימה
                             </div>
-                            <button class="shelfMedPicContainer buttonText protectivePractice buttonInList">
+                            <div class="shelfMedPicContainer buttonText protectivePractice ">
                                 תרגול מגן ללוחם.
-                            </button>
+                            </div>
                             <div class="shelfMedPicContainer">
                                 הסבר על חשיבות שיחות משאבים לאחר אירוע.
                             </div>
@@ -615,9 +640,9 @@
                     </div>
                     <div class="shelf10dropDown shelfsdropDown hidden">
                         <div class="shelfPicSection ">
-                            <button class="shelfMedPicContainer buttonText takeIronSwords">
+                            <div class="shelfMedPicContainer buttonText takeIronSwords">
                                 סירטון Top6 מלקחי מלחמת חרבות ברזל
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -626,21 +651,23 @@
                     <img class="medTypeSymbol" src="../assets/images/grapics/home-page/mdi--book-outline.svg">
                     <!-- מדף 1 -->
                     <div class="div-conclustion">
-                        <ul class = "big-list">
+                        <ul class="big-list">
                             <li>קצין הרפואה הגדודי הוא האחראי לרפואה בגזרתו.</li>
                             <br>
                             <li>הערכות מקדימה היא מפתח להצלחה בתעסוקה.</li>
                             <br>
                             <li>יש יכולת מועטה להשפיע על כשירות היחידה לתעסוקה לאחר שזו כבר החלה.</li>
                             <br>
-                            <li>ניצול האל"ת/אל"ל היינו הזדמנות להעלאת כשירות לתעסוקה במלחמה וליישור קו יחידתי בנושאי הליבה.</li>
+                            <li>ניצול האל"ת/אל"ל הינו הזדמנות להעלאת כשירות לתעסוקה במלחמה וליישור קו יחידתי בנושאי
+                                הליבה.</li>
                             <br>
                             <li>הפו"ש הרפואי באירוע הוא נדבך הכרחי ומשמעותי בהצלחת הטיפול הרפואי.</li>
                             <br>
-                            <li>השיח המקדים ויצירת השפה המשותפת לכל ההיבטים למול גורמי הרפואה בחטיבה הינו משמעותי ויסייע בעת האירוע.</li>
+                            <li>השיח המקדים ויצירת השפה המשותפת לכל ההיבטים למול גורמי הרפואה בחטיבה הינו משמעותי ויסייע
+                                בעת האירוע.</li>
                         </ul>
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="shelfsButtons hidden">
                 <img class="homeButton red" src="../assets/images/grapics/med-shelfs/home-button.svg">
@@ -653,7 +680,8 @@
                 <div class="title"></div>
                 <h1>דגשים!</h1>
                 <p>1. יש לוודא כי קיים ציוד תירגול מספק עבור כל דרג בנפרד.</p>
-                <p>2. את תכני האימון נדרש לתאם למול נציג הרפואה בבסיס האימונים הפיקודי הרלוונטי, ציוד רפואי הינו באחריות יחידה אורגנית בסדיר ובמילואים.</p>
+                <p>2. את תכני האימון נדרש לתאם למול נציג הרפואה בבסיס האימונים הפיקודי הרלוונטי, ציוד רפואי הינו באחריות
+                    יחידה אורגנית בסדיר ובמילואים.</p>
                 <h2>אימון רענון למצילי חיים</h2>
                 <p>יש לוודא כי הריענון מקבל ביטוי בלו"ז האימון הפלוגתי/גדודי ומועבר על ידי מדריכים המוכשרים לכך.</p>
                 <h2>ריענון מקצועי לחובשים</h2>
@@ -662,13 +690,13 @@
                 <p>נוכחות כלל בעלי התפקידים, השפעה על תכני האימונים בתכנון המקדים, מיקוד בעבודת צוות ובניית אורגניות.
                 </p>
             </template>
-            <template class="text-medicalEquipment">
+            <!-- <template class="text-medicalEquipment">
                 <div class="title"></div>
-                <h1>במסגרת סדירה</h1>
+                <h1>מסגרת סדירה</h1>
                 <p>בשירות מלא</p>
-                <h1>במסגרת מילואים</h1>
+                <h1>מסגרת מילואים</h1>
                 <p>סטטוס תיאום משיכה</p>
-            </template>
+            </template> -->
             <template class="imgTemp">
                 <div class="title"></div>
                 <img src="../assets/images/photos/ReportingProcedures.jpg" alt="ReportingProcedures"
@@ -684,14 +712,15 @@
             <template class="standbyTestWeekly">
                 <div class="title"></div>
                 <h3>פריטי הציוד שיבדקו אחת לשבוע:</h3>
-                <p>יתר פרטי הציוד, כולל מיכלי חמצן – ייבדקו אחת לשבוע . 
+                <p>יתר פרטי הציוד, כולל מיכלי חמצן – ייבדקו אחת לשבוע .
                     המים במיכלי המים יוחלפו אחת לחודש.
-                    </p>
+                </p>
             </template>
 
             <template class="textAndImgGlasses">
-                <div class="title" ></div>
-                <p style="text-align: center; padding: 5% 10%;" >מגינים על העיניים מפגיעת רסיסים, ומקטינים משמעותית פגיעה חודרת בעיניים. אי שימוש נובע קודם כל מחוסר
+                <div class="title"></div>
+                <p style="text-align: center; padding: 5% 10%;">מגינים על העיניים מפגיעת רסיסים, ומקטינים משמעותית פגיעה
+                    חודרת בעיניים. אי שימוש נובע קודם כל מחוסר
                     מודעות. ניתן להתגבר על אדים באמצעות מטלית ייעודית המגיעה עם המשקפיים. אם המשקפיים שרוטים או שבורים –
                     נדרש להחליף אותם. מרכיבי משקפי ראיה זכאים עדשות מיוחדות המורכבות בתוך משקפי המגן.[פוסטר פגיעת
                     עיניים]</p>
@@ -699,13 +728,15 @@
 
             <template class="textAndImgShielding">
                 <div class="title"></div>
-                <p  style="text-align: center; padding: 5% 10%;"> מיגון קרמי אינו בהכרח טוב יותר, כי הוא מתאים בעיקר למתאר ירי, ואילו שכפ״צ נותן מענה הרבה יותר טוב
+                <p style="text-align: center; padding: 5% 10%;"> מיגון קרמי אינו בהכרח טוב יותר, כי הוא מתאים בעיקר
+                    למתאר ירי, ואילו שכפ״צ נותן מענה הרבה יותר טוב
                     למתאר רסיסים, שהינו שכיח יותר.</p>
             </template>
 
             <template class="textAndImgHelmet">
                 <div class="title"></div>
-                <p  style="text-align: center; padding: 5% 10%;">יש להכיר את הנחיות הגזרתיות והחשיבות בחבירה לכוחות הגזרתיים לדיוק המיגון למתארים שונים (כגון הפס״ד)
+                <p style="text-align: center; padding: 5% 10%;">יש להכיר את הנחיות הגזרתיות והחשיבות בחבירה לכוחות
+                    הגזרתיים לדיוק המיגון למתארים שונים (כגון הפס״ד)
                 </p>
             </template>
 
@@ -750,9 +781,10 @@
                     allowfullscreen></iframe>
             </template>
 
-            <template class = "protocolHref">
+            <template class="protocolHref">
                 <div class="title"></div>
-                <a href="../assets/images/פרק 5- החייאת בקרת נזקים בשדה.pdf"style="display: block; margin: 0 auto; text-align: center;" target="_blank">פרוטוקול RDCR </a>
+                <a href="../assets/images/פרק 5- החייאת בקרת נזקים בשדה.pdf"
+                    style="display: block; margin: 0 auto; text-align: center;" target="_blank">פרוטוקול RDCR </a>
             </template>
 
             <template class="videoMatab">
@@ -775,25 +807,24 @@
                 <img src="../assets/images/photos/conversions.jpg" alt="conversions" style="width: 100%;">
             </template>
 
-            <template class="textHighlights">
+            <!-- <template class="textHighlights">
                 <div class="title"></div>
-                <h2 style="text-align: center;" >כשירות לטיפול של כלל הלוחמים:</h2>
-                <ul  style="text-align: center; padding: 5% 10%;">
+                <h2 style="text-align: center;">כשירות לטיפול של כלל הלוחמים:</h2>
+                <ul style="text-align: center; padding: 5% 10%;">
                     <il>1) מיקום ה-CAT וה- FC בווסט – זהה בין הלוחמים כדי לאפשר גישה מהירה בעת צורך.</il>
                     <br>
                     <br>
                     <il>2) אופן אפסון (אריזה סגורה ושלמה).</il>
-                    <!-- <il>תדירות תרגול </il> -->
                 </ul>
-            </template>
+            </template> -->
 
-            <template class="ambulance-btn">
+            <!-- <template class="ambulance-btn">
                 <div class="title"></div>
                 <h1>במסגרת סדירה</h1>
                 <p>אמבולנס אורגני - כשירות ותקינות.</p>
                 <h1>במסגרת מילואים</h1>
                 <p>בעל רישיון מתאים לכלי הגזרתי.</p>
-            </template>
+            </template> -->
 
             <template class="videoVolumedDevice">
                 <div class="title"></div>
@@ -813,34 +844,39 @@
 
             <template class="textAirway">
                 <div class="title"></div>
-                <p style="text-align: center; padding: 5% 10%;">הינן עדות קלינית לחסימת דרכי אוויר או חוסר יכולת לחמצן פצוע (סטורציה < 88%), לאחר מיצוי כלל האופציות
-                        השמרניות לפתיחת נתיב אוויר והנשמה לא פולשנית. כאשר קיים איום על נתיב האוויר (impending airway
-                        obstruction), כמו במקרה של כוויות בדרכי הנשימה או הרס אנטומי, נדרש לנטר את הפצוע בקפידה ולהתערב
-                        במקרה של הדרדרות למרות אמצעיים שמרניים.</p>
+                <p style="text-align: center; padding: 5% 10%;">הינן עדות קלינית לחסימת דרכי אוויר או חוסר יכולת לחמצן
+                    פצוע (סטורציה < 88%), לאחר מיצוי כלל האופציות השמרניות לפתיחת נתיב אוויר והנשמה לא פולשנית. כאשר
+                        קיים איום על נתיב האוויר (impending airway obstruction), כמו במקרה של כוויות בדרכי הנשימה או הרס
+                        אנטומי, נדרש לנטר את הפצוע בקפידה ולהתערב במקרה של הדרדרות למרות אמצעיים שמרניים.</p>
             </template>
 
             <template class="textChestDrainage">
                 <div class="title"></div>
-                <p style="text-align: center; padding: 5% 10%;">חשד לפציעה בבית החזה, בנוסף להלם עמוק, שלא מגיב לניקור במחט ומתן נפח, וכן חשד לפגיעת חזה עם סטורציה
+                <p style="text-align: center; padding: 5% 10%;">חשד לפציעה בבית החזה, בנוסף להלם עמוק, שלא מגיב לניקור
+                    במחט ומתן נפח, וכן חשד לפגיעת חזה עם סטורציה
                     הנמוכה מ- 85% למרות שימוש בחמצן.</p>
-                <p style="text-align: center; padding: 5% 10%;">הלם דימומי, פגיעת ראש בפני עצמה (גם אם ה- GCS ירוד) או פגיעת חזה – אינן מהווים התוויה לנתיב אוויר
+                <p style="text-align: center; padding: 5% 10%;">הלם דימומי, פגיעת ראש בפני עצמה (גם אם ה- GCS ירוד) או
+                    פגיעת חזה – אינן מהווים התוויה לנתיב אוויר
                     דפיניטיבי.</p>
             </template>
 
             <template class="textLossSign">
                 <div class="title"></div>
                 <h2 style="text-align: center;">הושעה למהלך המלחמה</h2>
-                <p style="text-align: center; padding: 5% 10%;">מתוך הבנה כי סיכוי ההצלה של הפצוע שמאבד סימני חיים הוא מזערי מחד, אולם מאידך מאריך את הטיפול בנפגע
+                <p style="text-align: center; padding: 5% 10%;">מתוך הבנה כי סיכוי ההצלה של הפצוע שמאבד סימני חיים הוא
+                    מזערי מחד, אולם מאידך מאריך את הטיפול בנפגע
                     ועלול לסכן את הצוות הרפואי במתאר מאוים, וכן מבזבז אמצעים ומוצרים שנמצאים בשטח בכמות קטנה (פרוצדורות,
                     פלזמה, דם) ועשויים להציל חיי פצוע בר הצלה.</p>
             </template>
 
             <template class="textAndVideoPainTreatment">
                 <div class="title"></div>
-                <p style="text-align: center; padding: 5% 5%;"> חודד פרוטוקול הטיפול בכאב לפצוע עם כאב בלתי נסבל הכולל אקטיק כקו ראשון ובמידה ואינו מגיב לאקטיק, או
+                <p style="text-align: center; padding: 5% 5%;"> חודד פרוטוקול הטיפול בכאב לפצוע עם כאב בלתי נסבל הכולל
+                    אקטיק כקו ראשון ובמידה ואינו מגיב לאקטיק, או
                     שיש לו גישה למחזור הדם בשלב מוקדם בטיפול, תרופת הבחירה היא קטמין במינון אנלגטי (25 מ"ג). מורפין הינו
                     קו שני במקרה שטיפול באקטיק ו/או קטמין אינו נותן הקלה מספקת.</p>
-                    <a href="../assets/images/טיפול בכאב בדרג השדה.pdf" style="display: block; margin: 0 auto; text-align: center;" target="_blank">פרוטוקול PDF</a>
+                <a href="../assets/images/טיפול בכאב בדרג השדה.pdf"
+                    style="display: block; margin: 0 auto; text-align: center;" target="_blank">פרוטוקול PDF</a>
             </template>
 
             <template class="trainingPlanningTable">
@@ -854,29 +890,37 @@
                     <tr>
                         <td class="name-table">לוחם - מציל חיים</td>
                         <td class="td-tabel">1.תירגול באמצעות גורמי הרפואה אחת לחודש
-                            2.יבצע ריענון אחת לחציון - הנחת ח"ע cat על גדים- על גפה חשופה ולא על מדים/בגד
+                            <br>
+                            <br>
+                            2.יבצע ריענון אחת לחציון - הנחת ח"ע cat על גדם- על גפה חשופה ולא על מדים/בגד
                         </td>
-                        <td class="td-tabel">לפני תעסוקה מבצעית (במסגרת אל"ת/אל"ל")</td>
+                        <td class="td-tabel">לפני תעסוקה מבצעית (במסגרת אל"ת/אל"ל)</td>
                     </tr>
                     <tr>
                         <td class="name-table">חובש/לור"מ</td>
-                        <td class="td-tabel">1. אימוני חופ בשנה + אימון מס"ר 1 לשנה.
+                        <td class="td-tabel">1. אימון חו"פ אחת לחציון + אימון מס"ר 1 לשנה
+                            <br>
+                            <br>
                             2. 1 לחודש הנחת ח"ע cat על גבי גדם כאשר בכל תירגול יבצע החובש 3 הנחות
                         </td>
                         <td class="td-tabel">1. אימון חו"פ באל"ת/אל"ל
-                            2. הנחת ח"ע cat בכל שב"פ
+                            <br>
+                            <br>
+                            2. הנחת ח"ע cat בכל שמ"פ
                         </td>
                     </tr>
                     <tr>
                         <td class="name-table">מטפל בכיר</td>
-                        <td class="td-tabel">פראמדיק - 4 משמרות כשירות בחודש
-                            רופא - 25 ימי כשירות בשנה בבתי חולים על פי הגדרת ענף רפמ"צ
+                        <td class="td-tabel"><b>פראמדיק</b> - 4 משמרות כשירות בחודש
+                            <br>
+                            <br>
+                            <b>רופא</b> - 25 ימי כשירות בשנה בבתי חולים על פי הגדרת ענף רפמ"צ
                         </td>
-                        <td class="td-tabel">פראמדיק - ביצוע 4 משמרות מדא ב 3 שנים האחרונות.</td>
+                        <td class="td-tabel"><b>פראמדיק</b> - ביצוע 4 משמרות מדא ב 3 שנים האחרונות.</td>
                     </tr>
-                  </table>
-                  <h2>דגש!</h2>
-                  <p>את האימונים במהלך התעסוקה נדרש לתאם מולר הרפואה המרחבי.</p>
+                </table>
+                <h2>דגש!</h2>
+                <p>את האימונים במהלך התעסוקה נדרש לתאם מול הרפואה המרחבי.</p>
             </template>
 
             <template class="textAndImgEvacuationTool">

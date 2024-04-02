@@ -51,7 +51,7 @@ body {
 }
 
 .open-screen {
-    position: absolute;
+    position: relative;
     /* top:15%; */
     z-index: 2;
     text-align: center;
@@ -60,28 +60,29 @@ body {
     width: 100%;
     height: 100%;
     color: white;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     /* display: none; */
 }
 
 .btnNext {
-    bottom: 23%;
+    bottom: 10%;
     position: absolute;
-    width: 22%;
+    width: 40%;
     font-size: 1.3rem;
     border-radius: 10px;
     color: rgb(62, 61, 61);
     border: none;
     background-color: rgb(230, 229, 229);
-    height: 5%;
+    height: 6%;
 }
 
 .text-screen {
     padding: 0% 10%;
 }
+
 .loader>img {
     width: 50vw;
 }
@@ -304,11 +305,17 @@ body {
     margin-top: 2em;
     text-align: center;
     font-weight: 500;
-    font-size: 1.27em;
+    font-size: 1.35em;
+    color: #474545;;
     display: flex;
+    align-items: center;
+    padding-inline: 4%;
+    box-sizing: border-box;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -318,14 +325,13 @@ table, th, td {
     padding: -4% 5%;
     font-size: 1.2rem;
 }
+
 .homePageButtonsScroll::-webkit-scrollbar {
     display: none;
 }
 
 .medHeadline {
     width: 60vw;
-    padding: 2em 0.6em;
-    padding-top: 1em;
     position: relative;
     left: 0vw;
 }
@@ -336,6 +342,7 @@ table, th, td {
     padding: 0% 0%;
     width: 40%;
 }
+
 .text-tab {
     background-color: #7a0101;
     color: white;
@@ -521,11 +528,7 @@ table, th, td {
 }
 
 .buttonInList {
-   position: relative;
-   right: 20%;
-}
-.buttonText {
-    display: inline-block;
+     display: inline-block;
     padding: 2% 3%;
     font-size: 1.1rem;
     text-align: center;
@@ -538,7 +541,23 @@ table, th, td {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.buttonText {
+   text-align: center;
+   position: relative;
+}
+
+.buttonText::after {
+    content: '👆🏻';
+    /* content: "&#9757;&#127995"; */
+    position: absolute;
+    bottom: -1rem;
+    /* left: 0; */
+    right: 0;
+    font-size: 1.5rem;
+    transform: rotate(330deg);
 }
 
 .btnDown {
@@ -594,12 +613,27 @@ table, th, td {
     background-color: #bc0505;
     color: #fcfcfc;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
-    bottom: 2vh;
+    width: 50%;
+    bottom: 4vh;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
     border: none;
     padding-block: 1%;
+}
+
+.img-screen {
+    position: absolute;
+    top: 2%;
+    right: 72%;
+}
+
+.signBahd10 {
+    width: 35%;
+}
+
+.signForce {
+    width: 50%;
 }
