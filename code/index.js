@@ -131,7 +131,7 @@ let objMedInfo = {
 let objMedsShelfsColors = {//צבע, מספר מדפים, כותרת
     antiallergic: ["pink", 6, "הכנה לתעסוקה מבצעית"],
     antibiotics: ["darkGreen", 3, "כניסה לגיזרה"],
-    breathing: ["orange", 10, " לקחיים מקצועיים"],
+    breathing: ["orange", 10, " לקחים מקצועיים"],
     chronicDiseases: ["teal", 5, " לסיכום "],
     // digestion : ["yellow", 5, "עיכול"],
     // painkillers : ["purple", 4, "משככי כאבים"],
