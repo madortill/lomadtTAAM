@@ -444,17 +444,15 @@ td {
 }
 
 .shelfMedPicContainer {
-    width: 44vw;
     background-color: white;
     height: fit-content;
     border-radius: 1em;
-    /* display: flex; */
     align-items: center;
     font-size: 1rem;
     margin-bottom: 1em;
     direction: rtl;
-    /* justify-content: center; */
     padding: 6% 20%;
+    text-align: center;
 }
 
 .shelfPicSection {
@@ -545,7 +543,7 @@ td {
 }
 
 .buttonText {
-   text-align: center;
+    text-align: center;
    position: relative;
 }
 
