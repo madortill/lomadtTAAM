@@ -368,7 +368,7 @@ td {
 .homePageButtonsScroll {
     overflow-y: scroll;
     height: 62vh;
-    margin-top: 0.5em;
+    margin-top: -0.5em;
 }
 
 .testButton {
