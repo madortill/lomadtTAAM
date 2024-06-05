@@ -369,7 +369,6 @@ td {
     overflow-y: scroll;
     height: 62vh;
     margin-top: -0.5em;
-    text-align: center;
 }
 
 .testButton {
@@ -640,12 +639,14 @@ td {
 .href-div {
     display: flex;
     justify-content: center;
+    right: 5%;
     flex-direction: column;
+    position: relative;
 }
 
 a {
     font-size: 1.2rem;
-    margin-bottom: 10px; /* Adjust the spacing as needed */
+    margin-bottom: 15px; /* Adjust the spacing as needed */
     /* text-decoration: none; Optional: Remove underline from links */
     color: #b70404; /* Optional: Set link color */
 }
